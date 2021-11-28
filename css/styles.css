@@ -27,6 +27,119 @@ nav {
     background-color: #04aa6d;
     color: white; }
 
+a[href*="instagram.com"] {
+  font-size: 26px;
+  color: #dd1212;
+  background-image: #dd1212; }
+
+a[href*="linkedin.com"] {
+  font-size: 26px;
+  color: #0468ff;
+  background-image: #0468ff; }
+
+a[href*="github.com"] {
+  font-size: 26px;
+  color: #585858;
+  background-image: #585858; }
+
+/* Add a black background color to the top navigation */
+footer .footer {
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  font-family: sans-serif;
+  font-size: 24px;
+  color: white;
+  height: auto;
+  display: grid;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  opacity: 0.6; }
+
+footer .footer-wrapper {
+  margin-bottom: 10px;
+  justify-content: center; }
+
+footer .footer-text {
+  max-width: 900px;
+  margin: auto;
+  vertical-align: center;
+  color: var(--footer-color);
+  padding-left: 10px;
+  padding-right: 10px; }
+
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px; }
+
+footer .footer-container div {
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+  width: 100vw;
+  font-size: 24px;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  opacity: 0.6; }
+
+footer th {
+  background-color: white;
+  vertical-align: middle; }
+
+footer .footerTable td {
+  border: none;
+  padding: 5px;
+  font-size: 32px; }
+
+footer .footerTable td svg {
+  color: black; }
+
+footer .footerTable td svg:hover {
+  color: #ad1010; }
+
+footer a:hover {
+  font-size: 30px; }
+
+table {
+  margin-left: auto;
+  margin-right: auto; }
+  table thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: orange;
+    color: white;
+    text-align: center; }
+  table tr:nth-child(even) {
+    background-color: #f2f2f2; }
+  table tbody tr:hover {
+    background-color: rgba(255, 166, 0, 0.322);
+    transform: scale(1.2); }
+
+ol {
+  list-style-type: circle; }
+
+.carousel {
+  color: black; }
+  .carousel .carousel-inner img {
+    width: 100%;
+    max-height: 700px !important;
+    /* Smaller than standard 960 (devices and browsers) */ }
+  .carousel .carousel slide {
+    border: 2px solid rgba(0, 0, 0, 0.103); }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
 body {
   font-family: "Roboto", sans-serif;
   background: #ffa98b;
@@ -41,28 +154,6 @@ h2 {
 a {
   text-decoration: none;
   color: purple; }
-
-table {
-  margin-left: auto;
-  margin-right: auto; }
-
-thead {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: orange;
-  color: white;
-  text-align: center; }
-
-tr:nth-child(even) {
-  background-color: #f2f2f2; }
-
-tr:hover {
-  background-color: rgba(255, 166, 0, 0.322);
-  transform: scale(1.2); }
-
-ol {
-  list-style-type: circle; }
 
 ul li {
   position: relative;
@@ -81,26 +172,6 @@ ul li {
   padding: 30px;
   border: 2px solid rgba(0, 0, 0, 0.103);
   background-color: rgba(255, 255, 255, 0.932); }
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px; }
-
-.footer-container div {
-  text-align: center;
-  margin: 30px;
-  padding: 30px;
-  width: 100vw;
-  font-size: 24px;
-  color: white;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  opacity: 0.6; }
 
 .grid-container {
   display: grid;
@@ -123,33 +194,3 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.social-media {
-  background-color: #ffff00; }
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  font-family: sans-serif;
-  font-size: 24px;
-  color: white;
-  height: auto;
-  display: grid;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  opacity: 0.6; }
-
-.footer-wrapper {
-  margin-bottom: 10px;
-  justify-content: center; }
-
-.footer-text {
-  max-width: 900px;
-  margin: auto;
-  vertical-align: center;
-  color: var(--footer-color);
-  padding-left: 10px;
-  padding-right: 10px; }
