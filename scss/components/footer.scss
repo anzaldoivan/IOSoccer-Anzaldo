@@ -30,6 +30,9 @@ $sites: ("instagram.com", "linkedin.com", "github.com");
 }
 /* Add a black background color to the top navigation */
 footer {
+  white-space: nowrap;
+  overflow: hidden;
+
   .footer {
     left: 0;
     bottom: 0;
@@ -65,12 +68,23 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+    background: black;
+    opacity: 0.6;
   }
 
-  .footer-container div {
+  .creditos {
     text-align: center;
-    margin: 30px;
-    padding: 30px;
+    width: 100vw;
+    font-size: 24px;
+    color: white;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media {
+    text-align: center;
     width: 100vw;
     font-size: 24px;
     color: white;
@@ -78,8 +92,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
-    opacity: 0.6;
   }
 
   th {
