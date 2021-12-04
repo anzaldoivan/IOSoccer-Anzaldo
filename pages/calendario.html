@@ -14,14 +14,40 @@
     </head>
     <body>
         <header>
-            <div class="flex-container">
-                <nav>
-                    <a href="../index.html">Home</a>
-                    <a href="./competencias.html">Competencias</a>
-                    <a href="./equipos.html">Equipos</a>
-                    <a href="./estadisticas.html">Estadisticas</a>
-                    <a class="active" href="./calendario.html">Calendario</a>
+            <div class="d-xs-block d-sm-none">   
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggler second-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+                            </button>
+                            <a class="navbar-brand" href="#">IOSoccer Sudamerica</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="bg-light shadow-3 p-4">
+                                <li class="btn btn-link btn-block border-bottom m-0"></li>><a class="active" href="../index.html">Home</a>
+                                <li class="btn btn-link btn-block border-bottom m-0"></li>><a href="./competencias.html">Competencias</a></li>
+                                <li class="btn btn-link btn-block border-bottom m-0"></li>><a href="./equipos.html">Equipos</a></li>
+                                <li class="btn btn-link btn-block border-bottom m-0"></li>><a href="./estadisticas.html">Estadisticas</a></li>
+                                <li class="btn btn-link btn-block border-bottom m-0"></li>><a href="./calendario.html">Calendario</a></li></li>
+                                <!-- Put here your menu items -->
+                            </ul>
+                
+                        </div --><!--/.navbar-collapse -->
+                    </div>
                 </nav>
+            </div>
+            
+            <div class="d-none d-sm-block">
+                <div class="flex-container">
+                    <nav>
+                            <a href="../index.html">Home</a>
+                            <a href="./competencias.html">Competencias</a>
+                            <a href="./equipos.html">Equipos</a>
+                            <a href="./estadisticas.html">Estadisticas</a>
+                            <a class="active" href="./calendario.html">Calendario</a>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -46,8 +72,8 @@
 
         <footer>
             <div class="footer-container">
+                <div class="creditos"><p>Sitio web creado por Ivan Anzaldo</p></div>
                 <div class="social-media">
-                    <p>Sitio web creado por Ivan Anzaldo</p>
                     <ul>
                         <li><a href="https://www.instagram.com/anzaldoivan/" target="_blank">Instagram</a></li>
                         <li><a href="https://www.linkedin.com/in/ivan-anzaldo/" target="_blank">LinkedIn</a></li>
@@ -56,5 +82,9 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,37 +1,219 @@
 /* Add a black background color to the top navigation */
 nav {
-  background-color: #333;
-  overflow: hidden;
-  border-radius: 5px;
-  border-left-style: none !important;
-  border-radius: 6px 6px 6px 6px;
-  margin: 1px;
+  @media (max-width: 767px) {
+    .desktop {
+      visibility: hidden;
+    }
+    /* Icon 1 */
 
-  .lista-nav {
-    list-style: none;
-    text-decoration: none;
+    .animated-icon1,
+    .animated-icon2,
+    .animated-icon3 {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      margin: 0px;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .animated-icon1 span,
+    .animated-icon2 span,
+    .animated-icon3 span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+
+    .animated-icon1 span {
+      background: #2d7ef7;
+    }
+
+    .animated-icon2 span {
+      background: #e3f2fd;
+    }
+
+    .animated-icon3 span {
+      background: #f3e5f5;
+    }
+
+    .animated-icon1 span:nth-child(1) {
+      top: 0px;
+    }
+
+    .animated-icon1 span:nth-child(2) {
+      top: 10px;
+    }
+
+    .animated-icon1 span:nth-child(3) {
+      top: 20px;
+    }
+
+    .animated-icon1.open span:nth-child(1) {
+      top: 11px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    .animated-icon1.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    .animated-icon1.open span:nth-child(3) {
+      top: 11px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+
+    /* Icon 3*/
+
+    .animated-icon2 span:nth-child(1) {
+      top: 0px;
+    }
+
+    .animated-icon2 span:nth-child(2),
+    .animated-icon2 span:nth-child(3) {
+      top: 10px;
+    }
+
+    .animated-icon2 span:nth-child(4) {
+      top: 20px;
+    }
+
+    .animated-icon2.open span:nth-child(1) {
+      top: 11px;
+      width: 0%;
+      left: 50%;
+    }
+
+    .animated-icon2.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .animated-icon2.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    .animated-icon2.open span:nth-child(4) {
+      top: 11px;
+      width: 0%;
+      left: 50%;
+    }
+
+    /* Icon 4 */
+
+    .animated-icon3 span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    .animated-icon3 span:nth-child(2) {
+      top: 10px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    .animated-icon3 span:nth-child(3) {
+      top: 20px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    .animated-icon3.open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 0px;
+      left: 8px;
+    }
+
+    .animated-icon3.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    .animated-icon3.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 21px;
+      left: 8px;
+    }
   }
 
-  /* Style the links inside the navigation bar */
-  a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  @media (min-width: 561px) {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+    border-left-style: none !important;
+    border-radius: 6px 6px 6px 6px;
+    margin: 1px;
 
-  /* Change the color of links on hover */
-  a:hover {
-    background-color: #ddd;
-    color: black;
-    transform: scale(1.1);
-  }
+    .lista-nav {
+      list-style: none;
+      text-decoration: none;
+    }
 
-  /* Add a color to the active/current link */
-  a.active {
-    background-color: #04aa6d;
-    color: white;
+    /* Style the links inside the navigation bar */
+    a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    a:hover {
+      background-color: #ddd;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    /* Add a color to the active/current link */
+    a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
   }
 }
