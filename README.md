@@ -1,5 +1,4 @@
 # IOSoccer-Anzaldo
-
 Proyecto de CoderHouse realizado durante la cursada de Desarrollo Web!
 
 # SEO
